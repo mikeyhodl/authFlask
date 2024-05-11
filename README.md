@@ -1,7 +1,14 @@
-# Flask Basic User Authentication 
+# Flask Basic User Authentication
 
-User authentication is important for protecting sensitive information and resources from unauthorized access. In this tutorial, you will learn how to set up basic user authentication – that is password-based authentication – in your Flask application.
+Use these commands to run the project
 
-Blog Tutorial: https://ashutoshkrris.hashnode.dev/how-to-set-up-basic-user-authentication-in-a-flask-app
-
-Project Demo: https://youtu.be/XxSESg89xEI
+python -m venv env
+source env/bin/activate
+export FLASK_APP=app.py
+pip instal-r requirements.txt
+pip install email_validator
+source .env
+flask db init
+flask db migrate
+flask db upgrade
+python manage.py run
